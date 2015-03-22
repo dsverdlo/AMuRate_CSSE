@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="C:/Users/david/.android"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="C:/Users/david/.eclipse"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="mysql-connector-java-5.1.23-bin.jar"/>
+	<classpathentry kind="lib" path="C:/Users/david/Downloads/mysql-connector-java-5.1.24/mysql-connector-java-5.1.24-bin.jar"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

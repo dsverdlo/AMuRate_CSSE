@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_note" >
+
+    <TextView
+        android:id="@+id/track_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:ellipsize="marquee"
+        android:focusable="false"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="@string/track_marquee"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/white"
+        android:textSize="28sp" />
+
+    <Button
+        android:id="@+id/track_newsearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@layout/rounded_corners"
+        android:paddingBottom="10dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingTop="10dp"
+        android:text="@string/track_new_search"
+        android:textColor="@android:color/white"
+        android:textSize="22sp" />
+
+    <ImageButton
+        android:id="@+id/track_youtube"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_above="@+id/track_ratingBar"
+        android:layout_alignLeft="@+id/track_button_artist"
+        android:background="@layout/button_youtube" />
+
+    <Button
+        android:id="@+id/track_butt_on_album"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/track_button_artist"
+        android:layout_alignLeft="@+id/track_button_artist"
+        android:layout_toLeftOf="@+id/track_albumimage"
+        android:background="@layout/rounded_corners"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:text="@string/track_album"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/track_albumimage"
+        android:layout_width="147dp"
+        android:layout_height="135dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/track_title"
+        android:src="@drawable/void_black" />
+
+    <TextView
+        android:id="@+id/track_ratingbarinfo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/track_newsearch"
+        android:layout_centerHorizontal="true"
+        android:text="@string/track_not_rated"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <RatingBar
+        android:id="@+id/track_ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/track_ratingbarinfo"
+        android:layout_centerHorizontal="true"
+        android:numStars="5"
+        android:stepSize="0.5" />
+
+    <Button
+        android:id="@+id/track_button_artist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/track_title"
+        android:layout_marginBottom="10dp"
+        android:layout_toLeftOf="@+id/track_albumimage"
+        android:background="@layout/rounded_corners"
+        android:paddingBottom="8dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="8dp"
+        android:text="@string/track_artist"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <com.dsverdlo.AMuRate.gui.AnimationView
+        android:id="@+id/track_loading_image"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/track_title"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/track_ratingbarinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/track_ratingbarinfo2"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>

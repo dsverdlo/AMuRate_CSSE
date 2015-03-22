@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/loginbg_no_watermark_crop2"
+    android:gravity="right"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:gravity="right"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/questionmark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:background="@layout/rounded_corners"
+            android:paddingBottom="6sp"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp"
+            android:paddingTop="6sp"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/enterTitle"
+            android:layout_width="240dip"
+            android:layout_height="40sp"
+            android:layout_marginLeft="2sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginTop="30sp"
+            android:background="@layout/rounded_corners"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:hint="@string/searchTitle"
+            android:maxLines="1"
+            android:textColor="#FFFFFF" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+            <EditText
+            android:id="@+id/enterArtist"
+            android:layout_width="240dip"
+            android:layout_height="40sp"
+            android:layout_marginLeft="2sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginTop="5sp"
+            android:background="@layout/rounded_corners"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:hint="@string/searchArtist"
+            android:maxLines="1"
+            android:textColor="#FFFFFF" >
+        </EditText>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginBottom="20sp"
+        android:layout_marginTop="20sp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@layout/rounded_corners"
+            android:hint="@string/search"
+            android:paddingBottom="10sp"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp"
+            android:paddingTop="10sp"
+            android:singleLine="true" >
+        </Button>
+
+        <Button
+            android:id="@+id/button_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="20sp"
+            android:background="@layout/rounded_corners"
+            android:hint="@string/cancel"
+            android:paddingBottom="10sp"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp"
+            android:paddingTop="10sp"
+            android:singleLine="true" >
+        </Button>
+    </LinearLayout>
+
+    <com.dsverdlo.AMuRate.gui.AnimationView
+        android:id="@+id/gif_loading"
+        android:layout_width="178dp"
+        android:layout_height="130dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/results"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:hint="@string/results"
+        android:textColor="@android:color/white" >
+    </TextView>
+    
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/view"
+        android:layout_marginTop="30sp"
+        android:layout_marginRight="20sp"
+        android:background="@layout/rounded_corners"
+        android:paddingBottom="6sp"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:paddingTop="6sp"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+    
+       <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_button_history"
+        android:layout_marginTop="30sp"
+        android:layout_marginRight="20sp"
+        android:background="@layout/rounded_corners"
+        android:paddingBottom="6sp"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:paddingTop="6sp"
+        android:text="@string/main_history"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+    
+</LinearLayout>

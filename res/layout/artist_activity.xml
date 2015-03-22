@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/artistMainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="15sp"
+    android:layout_marginRight="15sp"
+    android:orientation="vertical" >
+
+    <!-- first vertical: horizontal -->
+
+    <LinearLayout
+        android:id="@+id/first_vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+        <ImageView
+            android:id="@+id/artistBigPic"  
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/not_available"
+            android:contentDescription="Big picture of Artist" />
+        
+        <LinearLayout
+            android:id="@+id/artistStats"
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content" >
+        </LinearLayout>
+
+        
+    </LinearLayout>
+
+    <!-- second vertical: scroll view with one TextView in it -->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="110dp" 
+        >
+
+        <TextView
+            android:id="@+id/long_scroll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#CC444444" />
+            
+    </ScrollView>
+
+    <!-- third vertical: tracks and albums -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <!-- Two horizontal columns -->
+
+        <LinearLayout
+            android:layout_width="145dp"
+            android:minHeight="150dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/row1col1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="5sp"
+                android:textSize="20sp" />
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+                
+                <LinearLayout android:id="@+id/row2col1"
+                    android:orientation="vertical" 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"/>
+
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="145dp"
+            android:minHeight="150dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/row1col2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="5sp"
+                android:textSize="20sp" />
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout android:id="@+id/row2col2"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+                
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

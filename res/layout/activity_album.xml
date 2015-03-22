@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new3"
+    android:orientation="vertical"
+    tools:context=".AlbumActivity" >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <!-- VERTICAL INFO -->
+
+        <LinearLayout
+            android:layout_width="360sp"
+            android:layout_height="160sp"
+            android:layout_marginLeft="5sp"
+            android:layout_weight="5.29"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/album_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/album_title" />
+
+            <TextView
+                android:id="@+id/album_artist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/album_artist" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/album_playcount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:text="@string/album_playcount" />
+
+                <TextView
+                    android:id="@+id/album_listeners"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/album_listeners" />
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <TextView
+                    android:id="@+id/album_summary"
+                    android:layout_width="fill_parent"
+            		android:background="#CC444444"
+                    android:layout_height="30sp" />
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/album_image_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@layout/rounded_corners"
+                android:textColor="@android:color/white"
+                android:paddingBottom="6sp"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp"
+                android:paddingTop="6sp"
+                android:text="@string/album_x" />
+
+            <ImageView
+                android:id="@+id/album_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="Album image"
+                android:src="@drawable/not_available" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10sp" >
+
+        <LinearLayout
+            android:id="@+id/album_tracks"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
