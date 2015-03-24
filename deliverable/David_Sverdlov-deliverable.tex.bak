@@ -1,0 +1,66 @@
+\documentclass[12pt,portrait]{article}
+\usepackage{geometry}
+
+\usepackage{tikz}
+\usepackage{url}
+\usepackage{hyperref}
+%\geometry{verbose,letterpaper}
+
+
+\newcommand{\imgurl}{AMuRate_CSSE/images/} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\weburl}[1]{\url{https://raw.githubusercontent.com/dsverdlo/AMuRate_CSSE/master/images/#1}}
+
+
+\author{David Sverdlov, 94351, dsverdlo@vub.ac.be}
+\title{Capita Selecta Software Engineering \\
+ Project 2015} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+%\includegraphics[scale=0.5]{VUB}
+\maketitle
+
+\begin{tikzpicture}[remember picture, overlay]
+ \node [anchor=north west, inner sep=30pt]  at (current page.north west)
+     {\includegraphics[height=2.2cm]{VUB}};
+\end{tikzpicture}
+
+\section{Introduction}
+
+This deliverable documents the different steps taken in the project for the course Capita Selecta of Software Engineering, taught by Maja D'Hondt at the Vrije Universiteit Brussel. The goal of the project is to improve an existing program by means of automated unit testing and refactoring. The project is individual unless a team of 2 people has been approved. The chosen project is the Android application 'AMuRate', which was a part of my bachelor's project. This has been proposed and approved in one of the first lectures and will be first be described before moving on to the different steps of this project.
+
+\section{AMuRate}
+
+AMuRate is the name of the Android application, developed to collect music ratings and ultimately present new music according to the taste of the users. For more information about the application I refer to the project report\footnote{\url{https://github.com/dsverdlo/AMuRate/blob/master/Log/LaTeX/Bachelorproef.pdf}}.
+
+\section{Project Setup}
+
+The setup for this project will consist of a source code repository on Github, located at \url{https://github.com/dsverdlo/AMuRate_CSSE}, this report and the story maps created on StoriesOnBoard\footnote{\url{http://storiesonboard.com/}}. The report and iterations of the story map can also be found on this repository.
+
+\section{Story Map}
+
+As mentioned before, the story map will be created with the tool StoriesOnBoard. This tool provides the means to compose a big map of all required activities and tasks. The map can be exported as a XML, JPG or PDF file, and releases can be set. For the first step in this project, we have mapped our stories to this tool. The result has been exported and can be seen below.
+
+\begin{figure}[h]
+\includegraphics[scale=1.2]{\imgurl storymap1}
+\caption{\weburl{storymap1.jpg} }
+\end{figure}
+
+\section{Identifying risks}
+
+
+\section{Planning}
+
+
+
+
+
+
+
+
+
+
+
+%\newpage
+%\section{Screenshots}
+%\animategraphics[width=\linewidth]{0.5}{\taskimgname}{1}{10}
+\end{document}
