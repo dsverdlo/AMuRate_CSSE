@@ -7,7 +7,7 @@
 %\geometry{verbose,letterpaper}
 
 
-\newcommand{\imgurl}{AMuRate_CSSE/images/} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\imgurl}{../images/} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand{\weburl}[1]{\url{https://raw.githubusercontent.com/dsverdlo/AMuRate_CSSE/master/images/#1}}
 
 
@@ -30,11 +30,11 @@ This deliverable documents the different steps taken in the project for the cour
 
 \section{AMuRate}
 
-AMuRate is the name of the Android application, developed to collect music ratings and ultimately present new music according to the taste of the users. For more information about the application I refer to the project report\footnote{\url{https://github.com/dsverdlo/AMuRate/blob/master/Log/LaTeX/Bachelorproef.pdf}}.
+AMuRate is the name of the Android application, developed to collect music ratings and ultimately present new music according to the taste of the users. The app is developed for Android 4 and provides an easy to use user interface. Users do not even have to sign up to be able to use the app because there are identified by their phone id. The first thing users have to do is enter some search terms. These can be partial or full keywords, and there is an input field for artist names, and one for song names. Users can choose if they fill in one or two fields (if they do not enter any information a pop up will notify them that they might have forgotten this step). The app the queries the Last.FM database and will display a list of the results. Last.FM has been chosen because they provide a free to use API and has an enormous music database. Users can click on any of the results and view the details of a chosen artist or song. The average rating is shown and the user can give a rating of their own, on a scale of 0 - 5. These ratings are stored on my database, with the purpose of applying recommendation algorithms on this data. This way we could recommend new music to our users according to their taste. The implementation and employment of the recommendation systems fell out of the scope of the bachelor project. For more information about the application I refer to the project report\footnote{\url{https://github.com/dsverdlo/AMuRate/blob/master/Log/LaTeX/Bachelorproef.pdf}}.
 
 \section{Project Setup}
 
-The setup for this project will consist of a source code repository on Github, located at \url{https://github.com/dsverdlo/AMuRate_CSSE}, this report and the story maps created on StoriesOnBoard\footnote{\url{http://storiesonboard.com/}}. The report and iterations of the story map can also be found on this repository.
+The setup for this project will consist of a source code repository on Github, located at \url{https://github.com/dsverdlo/AMuRate_CSSE}. This report will be written in LaTeX and will also be available on the repository. The story maps will be created on StoriesOnBoard\footnote{\url{http://storiesonboard.com/}} and occassionaly uploaded to track progress. 
 
 \section{Story Map}
 
@@ -44,12 +44,25 @@ As mentioned before, the story map will be created with the tool StoriesOnBoard.
 \includegraphics[scale=1.2]{\imgurl storymap1}
 \caption{\weburl{storymap1.jpg} }
 \end{figure}
-
+ 
+ 
 \section{Identifying risks}
+
+This part was not that simple since the tool does not allow to mark certain tasks. To do this we could either set a task to 'done' to give it a small red label, or we could simply edit the JPG file in paint. We have chosen for the latter since we can add star shapes and make the risks more visible. In the future we might opt to use a more excessive photo manipulating tool, like GIMP, to support layers and be able to move stars, reshape them and keep them equally sized.
+
+The risks can be seen in the following figure:
+\begin{figure}[h]
+	\includegraphics[scale=1.2]{\imgurl storymap1risks}
+	\caption{\weburl{storymap1risks.jpg}
+\end{figure}
+
+\section{Slicing}
+\section{Test Strategy}
 
 
 \section{Planning}
 
+Since I am currently working on a thesis and 2 other projects, I will not be able to spend more time than 
 
 
 
